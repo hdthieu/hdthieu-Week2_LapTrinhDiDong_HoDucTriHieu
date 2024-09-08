@@ -40,12 +40,14 @@ const players1Final = [...players1, 'Thiago', 'Coutinho', 'Perisic'];
 
 
 // 5. Based on the game.odds object, create one variable for each odd (called 'team1', 'draw' and 'team2')
+
 const game = {
-    odds: { 
-        team1, 
-        x: draw, 
-        team2 }
-} ;
+    odds: {
+        team1: 1.33,
+        x: 3.25,
+        team2: 6.5
+    }
+}
 
 // 6. Write a function ('printGoals') that receives an arbitrary number of player names (not an array) and prints each of them to the console, 
 // along with the number of goals that were scored in total (number of player names passed in)
@@ -57,4 +59,6 @@ function  printGoals(...players) {
     }
 }
 
-printGoals('Davies', 'Muller', 'Sancho', 'Kimmich');
+// printGoals('Davies', 'Muller', 'Sancho', 'Kimmich');
+
+printGoals('Davies', 'Muller', 'Lewandowski', 'Kimmich')
